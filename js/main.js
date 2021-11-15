@@ -25,6 +25,7 @@ function addProduct() {
     productsContainer.push(product);
     clearForm();
     localStorage.setItem("ourProducts", JSON.stringify(productsContainer));
+    document.getElementById("mainBtn").innerHTML = "Add prouduct";
     dispalyProducts();
 }
 
