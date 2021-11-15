@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="w-75 mx-auto my-3">
+
+        <div class="mb-3">
+            <label for="productName">productName</label>
+            <input class="form-control  my-2" type="text" name="" id="productName">
+            <span class="small text-muted">Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="productPrice">productPrice</label>
+            <input class="form-control  my-2" type="number" name="" id="productPrice">
+            <span class="small text-muted">Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="productCaregory">productCaregory</label>
+            <input class="form-control  my-2" type="text" name="" id="productCategory">
+            <span class="small text-muted">Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="productDesc">productDesc</label>
+            <textarea class="form-control my-2" type="text" id="productDesc"></textarea>
+            <span class="small text-muted">Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <button id="mainBtn" onclick="addProduct() " class="btn btn-primary">add product</button>
+    </div>
+
+    <div class="w-75 mx-auto my-4">
+        <label for="" class="my-3">Search by Name :</label>
+        <input type="text" class="form-control" onkeyup="searchproducts(this.value)">
+    </div>
+
+    <table id="table" class="table w-75 mx-auto my-4 text-center">
+
+        <thead>
+            <th>index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>category</th>
+            <th>Desc</th>
+            <th>update</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody id="tableBody">
+
+
+        </tbody>
+
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
