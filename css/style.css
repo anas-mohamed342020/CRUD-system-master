@@ -6,4 +6,5 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: right;. 
  box-sizing: border-box;
+background-attachment: fixed;
 }
